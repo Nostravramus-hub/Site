@@ -1,9 +1,9 @@
 <?php
 start_session();
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['username'])) 
+{
     $_SESSION['msg'] = "You have to log in first";
-    header('location: login.php');
-	
+    header('location: login.php');	
 }
 ?>
 <!DOCTYPE html>
@@ -136,10 +136,7 @@ if (!isset($_SESSION['username'])) {
 	</head>
 	<body>
 		<div class="pagelogo">
-			<img
-				src="pic
-      s/page_logo.png"
-			/>
+			<img src="pics/page_logo.png"/>
 		</div>
 		<div class="contact">
 			<a href="mailto:avramdarius2002@gmail.com">Contact</a>
@@ -148,23 +145,15 @@ if (!isset($_SESSION['username'])) {
 		</div>
 		//
 		<p>----------</p>
-
 		<a href="games/csgo.html">
-			<img src="pics/csgo_index.jpg" class="csgo"
-		/></a>
+			<img src="pics/csgo_index.jpg" class="csgo"/></a>
 		<a href="games/dota2.html">
-			<img
-				src="pics/dot
-      a2_index.jpg"
-				class="dota2"
-		/></a>
+			<img src="pics/dota2_index.jpg" class="dota2"/></a>
 		<a href="games/lol.html"> <img src="pics/lol_index.jpg" class="lol" /></a>
 		<a href="games/among_us.html">
-			<img src="pics/among_us_index.jpg" class="among_us"
-		/></a>
+			<img src="pics/among_us_index.jpg" class="among_us"/></a>
 		<a href="games/nfs.html"> <img src="pics/nfs.jpg" class="nfs" /></a>
 		<a href="games/skribbl.html">
-			<img src="pics/skribbl.png" class="skribbl"
-		/></a>
+			<img src="pics/skribbl.png" class="skribbl"/></a>
 	</body>
 </html>
