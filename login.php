@@ -4,7 +4,7 @@
         <title>GammoSocial</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="https://nostravramus-hub.github.io/atestat/pagina/pics/head_logo.png" />
+        <link rel="icon" href="pagina/pics/head_logo.png" />
         <style>
             img {
                 display: block;
@@ -114,7 +114,7 @@
             </style>
 </head>
 <?php
-    require('https://nostravramus-hub.github.io/atestat/db.php');
+    require('db.php');
     session_start();
     if (isset($_POST['username'])) {
         $username = stripslashes($_REQUEST['username']);    // removes backslashes
@@ -129,12 +129,12 @@
         if ($rows == 1) {
             $_SESSION['username'] = $username;
             // Redirect to index page
-            header("Location: https://nostravramus-hub.github.io/atestat/pagina/index.html");
+            header("Location: pagina/index.html");
         } else {
             echo "
 				<div class='textlogin'>
 				<p>Incorrect Username/password.</h3>
-                  <p>Click here to <a href='https://nostravramus-hub.github.io/atestat/login.php'>Login</a> again.</p>
+                  <p>Click here to <a href='login.php'>Login</a> again.</p>
                   </div>";
         }
     } else {
@@ -144,7 +144,7 @@
         <input type="password" class="login-input" name="password" placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login-button"/>
 		</form>
-	<form class="register" action="https://nostravramus-hub.github.io/atestat/registration.php" method="get">
+	<form class="register" action="registration.php" method="get">
     <input type="submit" value="Register" name="Submit"/>
 </form>
 
@@ -152,7 +152,7 @@
     }
 ?>
 <body>
-    <img src="https://nostravramus-hub.github.io/atestat/pagina/pics/page_logo.png" class="center" >
+    <img src="pagina/pics/page_logo.png" class="center" >
 
 </body>
 </html>
